@@ -41,10 +41,12 @@ into a new repo very simple.
 
 ### Setup
 
-```bash
+```
 npm install
+```
 
 # Install MongoDB
+```
 npm install mongodb
 # or ...
 yarn add mongodb
