@@ -12,6 +12,80 @@ into a new repo very simple.
 
   - To setup your own project, you will need to copy the contents of this project into a new repo.
     - Click on **Use Template** At Top
+    
+    ![](https://github.com/DrVicki/starter/blob/master/template-use.png)
+    
+    - Create a New Respoitory from the Template.
+      - Create Name of your respository.
+      - Click "Create Repository from Template"
+    
+    ![](https://github.com/DrVicki/starter/blob/master/template.png)
+    
+    - Click on "Code"
+    - Copy URL Link of your new Repository
+    
+    ![](https://github.com/DrVicki/starter/blob/master/template-remote.png)
+    
+    
+    - Open VS Code
+        - Open "Terminal" from top menue
+        - clone down your newly created respository
+        
+        `git clone use url of your repo here`
+        
+        - Iitialize repo on local machine
+        
+        `git init`
+        
+## Quick Start
+
+### Setup
+
+```bash
+npm install
+
+# Install MongoDB
+npm install mongodb
+# or ...
+yarn add mongodb
+```
+
+## Start a MongoDB Server
+
+For complete MongoDB installation instructions, see [the manual](https://docs.mongodb.org/manual/installation/).
+
+  - Download the right MongoDB version from MongoDB
+  - Create a database directory (in this case under /data).
+  - Install and start a mongod process.
+
+```
+mongod --dbpath=/data
+```
+
+You should see the mongod process start up and print some status information.
+
+
+#### for Development
+
+Start the client
+```
+cd client
+npm start
+```
+
+Start the server
+```
+cd server
+npm start
+```
+
+#### for Production
+
+```bash
+npm run build
+npm start
+```
+
 
   - You will need to update the content in these files to names of your project and yourself:
 
@@ -23,41 +97,21 @@ into a new repo very simple.
 
 You can now start updating files in your client to begin working on your own project!
 
-## Quick Start
+# After each coding session:
+  - In VS Code
+  
+  `git add .`
+  
+    - To add changes made
+    
+  `git commit -m "commit message here"`
+  
+    - Stages changed files
+    
+   `git push -u origin master`
+   
+    - pushes changes from your local computer to you GitHb Repository
 
-#### Setup
-
-```bash
-npm install
-
-# Install MongoDB
-brew tap mongodb/brew
-brew install mongodb-community
-```
-
-Start the database
-```bash
-brew services start mongodb-community
-```
-
-#### for Development
-
-Start the client
-```bash
-npm run dev
-```
-
-Start the server
-```bash
-npm start
-```
-
-#### for Production
-
-```bash
-npm run build
-npm start
-```
 
 #### Other Commands
 
