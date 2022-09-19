@@ -69,13 +69,13 @@ You should see the mongod process start up and print some status information.
 
 #### for Development
 
-Start the client
+### Start the client
 ```
 cd client
 npm start
 ```
 
-Start the server
+### Start the server
 ```
 cd server
 npm start
